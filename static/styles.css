@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  height: 42px;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #555;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+main {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 10px;
+  padding: 0;
+}
+
+select, button {
+  height: 28px;
+}
+
+form {
+  display: inline;
+}
+
+#project-list {
+  margin-right: 10px;
+}
+
+#project-selector {
+  display: inline-block;
+}
+
+#editor-container {
+  position: absolute;
+  right: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#deployments-container, #logs-container {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  overflow: auto;
+  border-left: 1px solid #555;
+}
+
+#deployments-container {
+  top: 0;
+  height: 100%;
+}
+
+#logs-container {
+  bottom: 0;
+  border-top: 1px solid #555;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  border: 1px solid #555;
+}
+
+#deploy-button {
+  position: absolute;
+  right: 31%;
+  top: 10px;
+  height: 60px;
+  width: 120px;
+  background-color: green;
+  font-weight: bold;
+  color: #eee;
+  z-index: 1;
+}
+
+#logs, #deployments {
+  font-family: Monaco, Consolas, monospace;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.deployment-line {
+  margin: 5px 0;
+}
+
+.deployment-line .timestamp {
+  display: block;
+  color: #555;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.deployment-line .success {
+  color: green;
+}
